@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="JhonyRovetta">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/fonts.css">
+  <link rel="stylesheet" href="src/css/colors.css">
+  <link rel="stylesheet" href="src/css/animations.css">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <title>Character</title>
+</head>
+
+<body>
+  <main>
+    <header class="cabecalho">
+      <h1 class="titulo">Selecione um agente</h1>
+    </header>
+    <section class="selecao-de-agentes">
+
+      <!--Personagem Escolhido 1-->
+      <div class="agente-grande agente-jogador-1">
+        <img id="img-1p" src="src/img/Brimstone.png">
+        <div class="nome">
+          <h2 id="nome-1p">Brimstone</h2>
+        </div>
+      </div>
+
+      <!-- Lista de Personagens-->
+      <ul class="lista-de-agentes">
+        <li class="agente selecionado" id="Brimstone" onmouseover="seletor(this.id)" data-name="Brimstone">
+          <span class="tag">DF</span>
+          <img src="src/img/Brimstone_icon.png" alt="Personagem Valorant Brimstone">
+        </li>
+
+        <li class="agente" id="Phoenix" onmouseover="seletor(this.id)" data-name="Phoenix">
+          <span class="tag">DF</span>
+          <img src="src/img/Phoenix_icon.png" alt="Personagem Valorant Phoenix">
+        </li>
+
+        <li class="agente" id="Sage" onmouseover="seletor(this.id)" data-name="Sage">
+          <span class="tag">DF</span>
+          <img src="src/img/Sage_icon.png" alt="Personagem Valorant Sage">
+        </li>
+
+        <li class="agente" id="Sova" onmouseover="seletor(this.id)" data-name="Sova">
+          <span class="tag">DF</span>
+          <img src="src/img/Sova_icon.png" alt="Personagem Valorant Sova">
+        </li>
+
+        <li class="agente" id="Viper" onmouseover="seletor(this.id)" data-name="Viper">
+          <span class="tag">DF</span>
+          <img src="src/img/Viper_icon.png" alt="Personagem Valorant Viper">
+        </li>
+
+        <li class="agente" id="Cypher" onmouseover="seletor(this.id)" data-name="Cypher">
+          <span class="tag">DF</span>
+          <img src="src/img/Cypher_icon.png" alt="Personagem Valorant Cypher">
+        </li>
+
+        <li class="agente" id="Reyna" onmouseover="seletor(this.id)" data-name="Reyna">
+          <span class="tag">DF</span>
+          <img src="src/img/Reyna_icon.png" alt="Personagem Valorant Reyna">
+        </li>
+
+        <li class="agente" id="KillJoy" onmouseover="seletor(this.id)" data-name="KillJoy">
+          <span class="tag">DF</span>
+          <img src="src/img/Killjoy_icon.png" alt="Personagem Valorant KillJoy">
+        </li>
+
+        <li class="agente" id="Breach" onmouseover="seletor(this.id)" data-name="Breach">
+          <span class="tag">DF</span>
+          <img src="src/img/Breach_icon.png" alt="Personagem Valorant Breach">
+        </li>
+
+        <li class="agente jogador-2-selecionado" id="Omen" data-name="Omen">
+            <span class="tag">at</span>
+            <img src="src/img/Omen_icon.png" alt="Personagem Valorant Omen">
+        </li>
+
+        <li class="agente" id="Jett" onmouseover="seletor(this.id)" data-name="Jett">
+            <span class="tag">DF</span>
+            <img src="src/img/Jett_icon.png" alt="Personagem Valorant Jett">
+        </li>
+
+        <li class="agente" id="Raze" onmouseover="seletor(this.id)" data-name="Raze">
+            <span class="tag">DF</span>
+            <img src="src/img/Raze_icon.png" alt="Personagem Valorant Raze">
+        </li>
+
+        <li class="agente" id="Skye" onmouseover="seletor(this.id)" data-name="Skye">
+            <span class="tag">DF</span>
+            <img src="src/img/Skye_icon.png" alt="Personagem Valorant Skye">
+        </li>
+
+        <li class="agente" id="Yoru" onmouseover="seletor(this.id)" data-name="Yoru">
+            <span class="tag">DF</span>
+            <img src="src/img/Yoru_icon.png" alt="Personagem Valorant Yoru">
+        </li>
+
+        <li class="agente" id="Astra" onmouseover="seletor(this.id)" data-name="Astra">
+            <span class="tag">DF</span>
+            <img src="src/img/Astra_icon.png" alt="Personagem Valorant Astra">
+        </li>
+
+        <li class="agente" id="Kayo" onmouseover="seletor(this.id)" data-name="Kay/o">
+            <span class="tag">DF</span>
+            <img src="src/img/Kayo_icon.png" alt="Personagem Valorant Kayo">
+        </li>
+
+        <li class="agente" id="Chamber" onmouseover="seletor(this.id)" data-name="Chamber">
+            <span class="tag">DF</span>
+            <img src="src/img/Chamber_icon.png" alt="Personagem Valorant Chamber">
+        </li>
+
+        <li class="agente" id="Neon" onmouseover="seletor(this.id)" data-name="Neon">
+            <span class="tag">DF</span>
+            <img src="src/img/Neon_icon.png" alt="Personagem Valorant Neon">
+        </li>
+
+        <li class="agente" id="Fade" onmouseover="seletor(this.id)" data-name="Fade">
+            <span class="tag">DF</span>
+            <img src="src/img/Fade_icon.png" alt="Personagem Valorant Fade">
+        </li>
+      </ul>
+
+      <!--Personagem Escolgido 2-->
+      <div class="agente-grande agente-jogador-2">
+        <img src="src/img/Omen.png">
+        <div class="nome ">
+          <h2>Omen</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="src/js/dynamic.js"></script>
+</body>
+
+</html>

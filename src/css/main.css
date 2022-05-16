@@ -1,0 +1,164 @@
+body{
+    font-family: 'tungsten', courier, monospace;
+    background: var(--cor-secundaria);
+}
+
+body::before{
+    content: '';
+    background-image: url("../img/zbg6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalho{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo{
+    color: var(--cor-titulo-fraco);
+    text-transform: uppercase;
+    font-size: 120px;
+    line-height: 100px;
+    -webkit-text-stroke: 0.5px var(--cor-titulo-forte);
+}
+
+.selecao-de-agentes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-de-agentes .agente-grande{
+    text-align: center;
+    width: 30%;
+    height: 80vh;
+    position: relative;
+}
+
+.selecao-de-agentes .agente-grande img{
+    position: absolute;
+    width: 506px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.selecao-de-agentes .agente-grande .nome::before{
+    content: '';
+    height: 50%;
+    width: 5px;
+    position: absolute;
+    bottom: 30%;
+    border-radius: 10px;
+}
+
+.selecao-de-agentes .agente-grande.agente-jogador-1 .nome::before{
+    background-color: var(--cor-azul-principal);
+    left: 0px;
+
+}
+
+.selecao-de-agentes .agente-grande.agente-jogador-2 .nome::before{
+    background-color: var(--cor-vermelha-principal);
+    right: 0px;
+}
+
+.selecao-de-agentes .agente-grande .nome h2{
+    color: var(--cor-titulo-fraco);
+    font-family: 'tungsten';
+    font-size: 70px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.selecao-de-agentes .agente-grande.agente-jogador-1 .nome h2{
+    top: 90%; 
+    left: 40%;
+}
+
+.selecao-de-agentes .agente-grande.agente-jogador-2 .nome h2{
+    top: 90%; 
+    right: 40%;
+}
+
+.selecao-de-agentes .lista-de-agentes{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: center;
+    gap: 12px;
+}
+
+.selecao-de-agentes .lista-de-agentes .agente{
+    border: 2px solid var(--cor-padrao);
+    border-radius: 5px;
+    width: 105px;
+    height: 105px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.selecao-de-agentes .lista-de-agentes .agente img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.selecao-de-agentes .lista-de-agentes .agente.selecionado{
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-agentes .lista-de-agentes .agente:hover{
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.selecao-de-agentes .lista-de-agentes .agente.jogador-2-selecionado{
+    border: 2px solid var(--cor-vermelha-fraca);
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-agentes .lista-de-agentes .tag{
+    display: none;
+    font-family: 'valorant', Times, serif;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: var(--cor-padrao);
+    transition: opacity .3s ease-in-out;
+    animation: alternate;
+}
+
+.selecao-de-agentes .lista-de-agentes .agente.selecionado .tag{
+    display: block;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-agentes .lista-de-agentes .agente.jogador-2-selecionado .tag{
+    display: block;
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
